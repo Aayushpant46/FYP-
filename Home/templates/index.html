@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Light Control Panel</title>
+</head>
+<body>
+    <h1>Light Control Panel</h1>
+    <p>Current state: <strong>{{ relay_state }}</strong></p>
+    <form action="/control" method="post">
+        <button type="submit" name="action" value="ON">Turn ON</button>
+        <button type="submit" name="action" value="OFF">Turn OFF</button>
+    </form>
+</body>
+</html>
